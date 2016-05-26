@@ -23,20 +23,20 @@ module.exports = {
     root: __dirname,
     alias: {
       Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx',
+      applicationStyles: 'app/styles/app.scss',
+      Navigation: 'app/components/Navigation.jsx',
       Timer: 'app/components/Timer.jsx',
-      Clock: 'app/components/Clock.jsx',
       Countdown: 'app/components/Countdown.jsx',
-      applicationStyles: 'app/styles/app.scss'
-      },
-    extensions: ['','.js','.jsx']
+      Clock: 'app/components/Clock.jsx'
+    },
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [
       {
         loader: 'babel-loader',
         query: {
-          presets: ['react','es2015', 'stage-0']
+          presets: ['react', 'es2015', 'stage-0']
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
